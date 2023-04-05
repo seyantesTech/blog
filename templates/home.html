@@ -1,0 +1,59 @@
+{% extends 'template_base.html' %}
+{% load static %}
+{% block titre %}Page d'accueil{% endblock %}
+{% block contenu %}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h2 class="display-6 mb-3">
+            Solutions informatiques sur mesure
+        </h2>
+        <a href="{% url 'projets:projets' %}" type="button" class="btn btn-primary mb-4">nos projets</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg mb-3">
+            <img class="w-100" src="{% static 'logoST.png' %}" alt="logo ST">
+        </div>
+        <div class="col-lg text-center">
+            <h3 class="display-6">Technologies Seyantes</h3>
+            <hr class="my-4">
+            <p class="lead"> Nous aidons les entreprises et les particuliers à rationaliser leurs coûts et développer leur identité numérique via l'élaboration d'outils logiciels
+                performants,
+                sécurisés et fiables. Nos solutions informatiques sont toutes conçues de manière artisanales, donc codées à la main,
+                faisant de chaque client,
+                un client unique avec à la clé une solution unique et adaptée à son besoin. Nos clients sont ainsi conviés à
+                toutes les
+                phases de la réalisation de leurs besoins: un échantillon de nos compétences est disponible dans l'onglet "nos projets"
+            </p>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-3x">
+                <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fab fa-python fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Expertise en <br> programmation</h2>
+        </div>
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-3x">
+                <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa-brands fa-dev fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Développement web <br> fullstack</h2>
+        </div>
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-3x">
+                <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa-solid fa-folder-open fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Datascience et <br> aide à la décision</h2>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

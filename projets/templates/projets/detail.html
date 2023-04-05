@@ -1,0 +1,26 @@
+{% extends 'template_base.html' %}
+{% block contenu %}
+
+
+
+<div class="container mt-4">
+    <h4 class="display-6">Notre passion, notre coeur de métier</h4>
+
+    <div class="row mt-5">
+        <div class="col-lg mb-3">
+            <img class="w-100" src="{{ projet.image.url }}" alt="{{ projet.titre }}">
+        </div>
+        <div class="col-lg text-center">
+            <h3 class="display-6">{{ projet.titre }}</h3>
+            <hr class="my-4">
+            <p class="lead">{{ projet.contenu }}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

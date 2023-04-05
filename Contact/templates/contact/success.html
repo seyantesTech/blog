@@ -1,0 +1,9 @@
+{% extends 'template_base.html' %}
+{% block titre %}Succès{% endblock %}
+{% block contenu %}
+
+<h2 style="text-align: center; color: red;" "></h2style>Votre message a bien été envoyé</h2>
+<p> Vous pouvez en renvoyer un nouveau via <a href=" {% url 'contact:contact' %}">Page de contact</a>
+</p>
+
+{% endblock %}
