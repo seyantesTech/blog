@@ -39,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projets',
     'Contact',
-    # 'st_users',
-    #'embed_video',
 ]
 
 # AUTH_USER_MODEL = 'st_users.St_users'

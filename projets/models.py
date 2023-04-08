@@ -1,5 +1,4 @@
 from django.db import models
-from embed_video.fields import EmbedVideoField
 
 class Projet(models.Model):
     # https://docs.djangoproject.com/fr/4.1/ref/models/fields/#field-types
@@ -7,7 +6,6 @@ class Projet(models.Model):
     slug = models.SlugField(max_length=100)
     contenu = models.TextField()
     date_publication = models.DateTimeField(auto_now_add=True)
-    e_vid = EmbedVideoField(blank=True) 
     image = models.ImageField(default='default.jpg')
 
     class Meta:

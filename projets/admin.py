@@ -7,7 +7,7 @@ from .models import Projet
 # https://www.youtube.com/shorts/Is9MXXTV9tc
 
 class AdminProjet(admin.ModelAdmin):
-    list_display = ('titre','slug','contenu','date_publication', 'e_vid')
+    list_display = ('titre','slug','contenu','date_publication')
 
 admin.site.register(Projet,AdminProjet) 
 
