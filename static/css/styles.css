@@ -1,0 +1,24 @@
+body {
+
+    background-color: #FAF6F1;
+}
+
+.jumbotron .container{
+    max-width: 40rem;
+    /* https://www.w3schools.com/cssref/css_units.asp */
+}
+
+
+span i:first-child {
+    color: #f4d9c0
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom:16px ;
+}
